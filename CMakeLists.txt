@@ -42,6 +42,7 @@ osc/OscOutboundPacketStream.cpp
 
 )
 
+target_include_directories(oscpack PUBLIC .)
 
 ADD_EXECUTABLE(OscUnitTests tests/OscUnitTests.cpp)
 TARGET_LINK_LIBRARIES(OscUnitTests oscpack ${LIBS})
