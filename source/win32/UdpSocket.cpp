@@ -35,8 +35,8 @@
 	above license is reproduced.
 */
 
-#include <winsock2.h>   // this must come first to prevent errors with MSVC7
-#include <windows.h>
+#include <WinSock2.h>   // this must come first to prevent errors with MSVC7
+#include <Windows.h>
 #include <mmsystem.h>   // for timeGetTime()
 
 #ifndef WINCE
@@ -49,13 +49,13 @@
 #include <stdexcept>
 #include <vector>
 
-#include "ip/UdpSocket.h" // usually I'd include the module header first
+#include "UdpSocket.h" // usually I'd include the module header first
                           // but this is causing conflicts with BCB4 due to
                           // std::size_t usage.
 
-#include "ip/NetworkingUtils.h"
-#include "ip/PacketListener.h"
-#include "ip/TimerListener.h"
+#include "NetworkingUtils.h"
+#include "PacketListener.h"
+#include "TimerListener.h"
 
 
 typedef int socklen_t;
